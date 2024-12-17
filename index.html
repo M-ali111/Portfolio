@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Ali Javed - Portfolio">
+  <title>Muhammad Ali Javed - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#">My Portfolio</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  
+
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <div class="container">
+      <div class="welcome-content">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my skills, projects, and achievements. Let's create something amazing together!</p>
+        <div class="cta-buttons">
+          <a href="#about" class="btn-primary">Learn More About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="bio">
+        <img src="me-3x4.jpg" alt="Muhammad Ali Javed" class="profile-pic">
+        <div class="bio-text">
+          <h2>Hello, I'm Muhammad Ali Javed!</h2>
+          <p>
+            I'm a passionate computer science student at Astana IT University, specializing in software development, data science, and artificial intelligence.
+            With hands-on experience in full-stack development and machine learning, I'm always exploring new technologies and solutions to solve real-world problems.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <!-- Skills Section -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills & Expertise</h2>
+    <div class="skills-list">
+      <div class="skill">
+        <h3>Programming</h3>
+        <p>Proficient in Python, JavaScript and Java</p>
+      </div>
+      <div class="skill">
+        <h3>Web Development</h3>
+        <p>Experienced with HTML, CSS, JavaScript, React, and Node.js</p>
+      </div>
+      <div class="skill">
+        <h3>Data Science</h3>
+        <p>Skilled in data analysis, machine learning, and statistical modeling</p>
+      </div>
+      <!-- New Skill for Databases -->
+      <div class="skill">
+        <h3>Database Technologies</h3>
+        <p>Experienced in SQL, MongoDB, and Power BI</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Certifications Section -->
+<section id="certifications">
+  <div class="container">
+    <h2>Certifications</h2> <!-- Heading Styled Same as Others -->
+    <div class="certifications-list">
+      <div class="certification">
+        <h3>Functional Programming Principles in Scala</h3>
+        <p>Completed at École Polytechnique Fédérale de Lausanne (EPFL)</p>
+      </div>
+      <div class="certification">
+        <h3>Python for Data Science, AI & Development</h3>
+        <p>Completed at IBM through Coursera</p>
+      </div>
+      <div class="certification">
+        <h3>Data Science & AI with Python</h3>
+        <p>Coursera (IBM)</p>
+      </div>
+      <div class="certification">
+        <h3>TEFL Certification</h3>
+        <p>Internationally Recognized Certification</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>AI-Powered Daily Drilling Report Analyzer for Oil Wells</h3>
+          <p>A system that uses AI to analyze daily drilling reports for oil wells, optimizing the process and providing insights.</p>
+        </div>
+        <div class="project">
+          <h3>Travel & Tour Website</h3>
+          <p>A fully functional website designed to help users plan and book their travel, offering services like hotel bookings, flight search, and tour package customization.</p>
+        </div>
+        <div class="project">
+          <h3>Blockchain-based Health Registry</h3>
+          <p>A decentralized system using blockchain technology to securely store and manage health records, ensuring privacy and accessibility for users.</p>
+        </div>
+  
+        <div class="project">
+          <h3>Smart City Analytics</h3>
+          <p>Worked on a project to analyze urban data in real-time, providing insights into traffic, public safety, and resource management using machine learning and IoT.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, you can reach me through any of the following platforms:</p>
+      <div class="contact-details">
+        <p><strong>Email:</strong>muhammadalijaved11@gmail.com</p>
+        <p><strong>Telegram:</strong> https://t.me/Ali_MAJ111</p>
+        <p><strong>WhatsApp:</strong> +7 705 123 3680</p>
+        <p><strong>Phone:</strong> +7 705 123 3680 / +92 332 9373356</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <footer>
+    <p>&copy; 2024 Muhammad Ali Javed. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle functionality
+    const hamburger = document.getElementById("hamburger-icon");
+    const navLinks = document.querySelector(".nav-links");
+  
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      hamburger.classList.toggle("open");
+    });
+  
+    // Smooth scrolling functionality for navigation links
+    document.querySelectorAll('nav a').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const sectionId = link.getAttribute('href').substring(1);
+        const section = document.getElementById(sectionId);
+        window.scrollTo({
+          top: section.offsetTop - 80,  // Adjust offset for fixed header
+          behavior: 'smooth'
+        });
+  
+        // Close the mobile menu if screen width is 768px or less
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove("open");
+          hamburger.classList.remove("open");
+        }
+      });
+    });
+  
+    // Handle scrolling using mouse wheel
+    let currentSectionIndex = 0;
+    const sections = document.querySelectorAll('section');
+  
+    const scrollToSection = (index) => {
+      if (index < 0 || index >= sections.length) return;
+      window.scrollTo({
+        top: sections[index].offsetTop - 80,  // Adjust offset for fixed header
+        behavior: 'smooth'
+      });
+      currentSectionIndex = index;
+    };
+  
+    window.addEventListener('wheel', (event) => {
+      if (event.deltaY > 0) {
+        // Scroll down
+        scrollToSection(currentSectionIndex + 1);
+      } else {
+        // Scroll up
+        scrollToSection(currentSectionIndex - 1);
+      }
+    });
+  </script>
+  
+
+</body>
+</html>
